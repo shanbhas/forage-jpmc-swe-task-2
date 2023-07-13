@@ -1,0 +1,40 @@
+From a74c7548e70d3a9a81ea1fbfe89c1d06cb948d91 Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Sat, 8 Jul 2023 08:38:49 +0400
+Subject: [PATCH 6/8] app-modification2
+
+---
+ src/App.tsx | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+diff --git a/src/App.tsx b/src/App.tsx
+index 192438a..e63acd3 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -41,11 +41,21 @@ class App extends Component<{}, IState> {
+    * Get new data from server and update the state with the new data
+    */
+   getDataFromServer() {
++    let x =0 ;
++    const interval = setInterval(()=> {
+     DataStreamer.getData((serverResponds: ServerRespond[]) => {
++      this.setState({
++        data:serverResponds,
++        showGraph: true,
++      });
++    });
+       // Update the state by creating a new array of data that consists of
+       // Previous data in the state and the new data from server
+-      this.setState({ data: [...this.state.data, ...serverResponds] });
+-    });
++      x++;
++      if(x>1000){
++        clearInterval(interval);
++      }
++    } , 100);
+   }
+ 
+   /**
+-- 
+2.39.1.windows.1
+

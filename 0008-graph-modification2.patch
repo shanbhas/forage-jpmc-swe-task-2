@@ -1,0 +1,314 @@
+From e687223dd08e8b7e9c5ec194dc1d38fe010ccf8e Mon Sep 17 00:00:00 2001
+From: josiahdc <josiah.chapman@gmail.com>
+Date: Wed, 5 Oct 2022 13:05:11 -0700
+Subject: [PATCH 1/8] added requirements
+
+---
+ requirements.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 requirements.txt
+
+diff --git a/requirements.txt b/requirements.txt
+new file mode 100644
+index 0000000..f678e82
+--- /dev/null
++++ b/requirements.txt
+@@ -0,0 +1 @@
++python-dateutil==2.8.2
+\ No newline at end of file
+-- 
+2.39.1.windows.1
+
+From 3022e1f02670f8336f457078532f98c50f77496e Mon Sep 17 00:00:00 2001
+From: Joe Ferrer <joe@theforage.com>
+Date: Wed, 1 Mar 2023 00:45:20 +1100
+Subject: [PATCH 2/8] Move python files to datafeed dir
+
+---
+ requirements.txt => datafeed/requirements.txt | 0
+ server.py => datafeed/server3.py              | 0
+ datafeed/test.csv                             | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename requirements.txt => datafeed/requirements.txt (100%)
+ rename server.py => datafeed/server3.py (100%)
+ create mode 100644 datafeed/test.csv
+
+diff --git a/requirements.txt b/datafeed/requirements.txt
+similarity index 100%
+rename from requirements.txt
+rename to datafeed/requirements.txt
+diff --git a/server.py b/datafeed/server3.py
+similarity index 100%
+rename from server.py
+rename to datafeed/server3.py
+diff --git a/datafeed/test.csv b/datafeed/test.csv
+new file mode 100644
+index 0000000..e69de29
+-- 
+2.39.1.windows.1
+
+From 19b09d5503c2470d0e8b46c553e88c3503d9a109 Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Fri, 7 Jul 2023 20:03:02 +0400
+Subject: [PATCH 3/8] first push
+
+---
+ .idea/forage-jpmc-swe-task-2.iml               | 8 ++++++++
+ .idea/inspectionProfiles/profiles_settings.xml | 6 ++++++
+ .idea/modules.xml                              | 8 ++++++++
+ 3 files changed, 22 insertions(+)
+ create mode 100644 .idea/forage-jpmc-swe-task-2.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/modules.xml
+
+diff --git a/.idea/forage-jpmc-swe-task-2.iml b/.idea/forage-jpmc-swe-task-2.iml
+new file mode 100644
+index 0000000..d0876a7
+--- /dev/null
++++ b/.idea/forage-jpmc-swe-task-2.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000..105ce2d
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..2afa09c
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/forage-jpmc-swe-task-2.iml" filepath="$PROJECT_DIR$/.idea/forage-jpmc-swe-task-2.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+-- 
+2.39.1.windows.1
+
+From 8a4e47112b21b931ed2cedb743aafc1e34736a8c Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Fri, 7 Jul 2023 20:03:15 +0400
+Subject: [PATCH 4/8] .
+
+---
+ .idea/forage-jpmc-swe-task-2.iml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/.idea/forage-jpmc-swe-task-2.iml b/.idea/forage-jpmc-swe-task-2.iml
+index d0876a7..7d72d5b 100644
+--- a/.idea/forage-jpmc-swe-task-2.iml
++++ b/.idea/forage-jpmc-swe-task-2.iml
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
++    <orderEntry type="jdk" jdkName="Python 3.11 (ve2)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+-- 
+2.39.1.windows.1
+
+From 3133aa4a7ed513cdf3a3d69d6753cfe726d8e31f Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Sat, 8 Jul 2023 00:24:07 +0400
+Subject: [PATCH 5/8] app-modification1
+
+---
+ src/App.tsx | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/src/App.tsx b/src/App.tsx
+index 0728518..192438a 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -8,6 +8,7 @@ import './App.css';
+  */
+ interface IState {
+   data: ServerRespond[],
++  showGraph: boolean,
+ }
+ 
+ /**
+@@ -22,6 +23,7 @@ class App extends Component<{}, IState> {
+       // data saves the server responds.
+       // We use this state to parse data down to the child element (Graph) as element property
+       data: [],
++      showGraph: false,
+     };
+   }
+ 
+@@ -29,7 +31,10 @@ class App extends Component<{}, IState> {
+    * Render Graph react component with state.data parse as property data
+    */
+   renderGraph() {
+-    return (<Graph data={this.state.data}/>)
++    if(this.state.showGraph)
++    {
++      return (<Graph data={this.state.data}/>)
++    }
+   }
+ 
+   /**
+-- 
+2.39.1.windows.1
+
+From a74c7548e70d3a9a81ea1fbfe89c1d06cb948d91 Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Sat, 8 Jul 2023 08:38:49 +0400
+Subject: [PATCH 6/8] app-modification2
+
+---
+ src/App.tsx | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+diff --git a/src/App.tsx b/src/App.tsx
+index 192438a..e63acd3 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -41,11 +41,21 @@ class App extends Component<{}, IState> {
+    * Get new data from server and update the state with the new data
+    */
+   getDataFromServer() {
++    let x =0 ;
++    const interval = setInterval(()=> {
+     DataStreamer.getData((serverResponds: ServerRespond[]) => {
++      this.setState({
++        data:serverResponds,
++        showGraph: true,
++      });
++    });
+       // Update the state by creating a new array of data that consists of
+       // Previous data in the state and the new data from server
+-      this.setState({ data: [...this.state.data, ...serverResponds] });
+-    });
++      x++;
++      if(x>1000){
++        clearInterval(interval);
++      }
++    } , 100);
+   }
+ 
+   /**
+-- 
+2.39.1.windows.1
+
+From 03d73aaaed0832a72254131f6bb040ea62becd15 Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Sat, 8 Jul 2023 09:08:11 +0400
+Subject: [PATCH 7/8] graph-modification1
+
+---
+ .vscode/settings.json |  1 +
+ src/Graph.tsx         | 11 ++++++++---
+ 2 files changed, 9 insertions(+), 3 deletions(-)
+ create mode 100644 .vscode/settings.json
+
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/.vscode/settings.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 3b2a7da..a4adc52 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -14,7 +14,7 @@ interface IProps {
+  * Perspective library adds load to HTMLElement prototype.
+  * This interface acts as a wrapper for Typescript compiler.
+  */
+-interface PerspectiveViewerElement {
++interface PerspectiveViewerElement extends HTMLElement{
+   load: (table: Table) => void,
+ }
+ 
+@@ -32,7 +32,7 @@ class Graph extends Component<IProps, {}> {
+ 
+   componentDidMount() {
+     // Get element to attach the table from the DOM.
+-    const elem: PerspectiveViewerElement = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
++    const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+ 
+     const schema = {
+       stock: 'string',
+@@ -41,7 +41,7 @@ class Graph extends Component<IProps, {}> {
+       timestamp: 'date',
+     };
+ 
+-    if (window.perspective && window.perspective.worker()) {
++    if (window.perspective) {
+       this.table = window.perspective.worker().table(schema);
+     }
+     if (this.table) {
+@@ -49,6 +49,11 @@ class Graph extends Component<IProps, {}> {
+ 
+       // Add more Perspective configurations here.
+       elem.load(this.table);
++      elem.setAttribute('view','y_line');
++      elem.setAttribute('column-pivots','["stock"]');
++      elem.setAttribute('row-pivots','["timestamp"]');
++      elem.setAttribute('columns','["top_ask_price"]');
++      elem.setAttribute('aggregates',{"stock":"distinct count","top_ask_price":"avg","top_bid_price":"avg","timestamp":"distinct count"}');
+     }
+   }
+ 
+-- 
+2.39.1.windows.1
+
+From f2717b91c4fce965cf19b4498f34bb6618ec39e2 Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Sat, 8 Jul 2023 09:13:01 +0400
+Subject: [PATCH 8/8] graph-modification2
+
+---
+ src/Graph.tsx | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index a4adc52..3ba39e3 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -53,7 +53,8 @@ class Graph extends Component<IProps, {}> {
+       elem.setAttribute('column-pivots','["stock"]');
+       elem.setAttribute('row-pivots','["timestamp"]');
+       elem.setAttribute('columns','["top_ask_price"]');
+-      elem.setAttribute('aggregates',{"stock":"distinct count","top_ask_price":"avg","top_bid_price":"avg","timestamp":"distinct count"}');
++      elem.setAttribute('aggregates', '{"stock":"distinct count","top_ask_price":"avg","top_bid_price":"avg","timestamp":"distinct count"}');
++
+     }
+   }
+ 
+-- 
+2.39.1.windows.1
+
+
+
+
+

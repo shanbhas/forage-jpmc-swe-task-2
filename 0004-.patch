@@ -1,0 +1,26 @@
+From 8a4e47112b21b931ed2cedb743aafc1e34736a8c Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Fri, 7 Jul 2023 20:03:15 +0400
+Subject: [PATCH 4/8] .
+
+---
+ .idea/forage-jpmc-swe-task-2.iml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/.idea/forage-jpmc-swe-task-2.iml b/.idea/forage-jpmc-swe-task-2.iml
+index d0876a7..7d72d5b 100644
+--- a/.idea/forage-jpmc-swe-task-2.iml
++++ b/.idea/forage-jpmc-swe-task-2.iml
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
++    <orderEntry type="jdk" jdkName="Python 3.11 (ve2)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+-- 
+2.39.1.windows.1
+

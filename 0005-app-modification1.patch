@@ -1,0 +1,44 @@
+From 3133aa4a7ed513cdf3a3d69d6753cfe726d8e31f Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Sat, 8 Jul 2023 00:24:07 +0400
+Subject: [PATCH 5/8] app-modification1
+
+---
+ src/App.tsx | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/src/App.tsx b/src/App.tsx
+index 0728518..192438a 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -8,6 +8,7 @@ import './App.css';
+  */
+ interface IState {
+   data: ServerRespond[],
++  showGraph: boolean,
+ }
+ 
+ /**
+@@ -22,6 +23,7 @@ class App extends Component<{}, IState> {
+       // data saves the server responds.
+       // We use this state to parse data down to the child element (Graph) as element property
+       data: [],
++      showGraph: false,
+     };
+   }
+ 
+@@ -29,7 +31,10 @@ class App extends Component<{}, IState> {
+    * Render Graph react component with state.data parse as property data
+    */
+   renderGraph() {
+-    return (<Graph data={this.state.data}/>)
++    if(this.state.showGraph)
++    {
++      return (<Graph data={this.state.data}/>)
++    }
+   }
+ 
+   /**
+-- 
+2.39.1.windows.1
+

@@ -1,0 +1,60 @@
+From 19b09d5503c2470d0e8b46c553e88c3503d9a109 Mon Sep 17 00:00:00 2001
+From: SaiBhags <shanbhagsaish@gmail.com>
+Date: Fri, 7 Jul 2023 20:03:02 +0400
+Subject: [PATCH 3/8] first push
+
+---
+ .idea/forage-jpmc-swe-task-2.iml               | 8 ++++++++
+ .idea/inspectionProfiles/profiles_settings.xml | 6 ++++++
+ .idea/modules.xml                              | 8 ++++++++
+ 3 files changed, 22 insertions(+)
+ create mode 100644 .idea/forage-jpmc-swe-task-2.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/modules.xml
+
+diff --git a/.idea/forage-jpmc-swe-task-2.iml b/.idea/forage-jpmc-swe-task-2.iml
+new file mode 100644
+index 0000000..d0876a7
+--- /dev/null
++++ b/.idea/forage-jpmc-swe-task-2.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000..105ce2d
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..2afa09c
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/forage-jpmc-swe-task-2.iml" filepath="$PROJECT_DIR$/.idea/forage-jpmc-swe-task-2.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+-- 
+2.39.1.windows.1
+
